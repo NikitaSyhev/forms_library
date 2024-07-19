@@ -41,13 +41,11 @@ function forms(formSelector, modalTimerId) {
             }).catch(()=>{
                 showThanksModal(message.failure);  
             }).finally(()=>{
-                //очистка формы
                 form.reset();
             })
         });
         }
     
-        //создает модальное окно с сообщениями: успех или неудача загрузки
         function showThanksModal(message) {
             const prevModalDialog = document.querySelector('.modal__dialog');
     
